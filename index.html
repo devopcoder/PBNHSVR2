@@ -124,7 +124,7 @@
       overlay.classList.add("show");
       setTimeout(() => {
         overlay.classList.remove("show");
-      }, 1500);
+      }, 2500);
     }
 
     function onScanSuccess(decodedText) {
@@ -144,7 +144,7 @@
         document.getElementById("status").innerText = "✅ Ready for next scan";
         scanner.resume(onScanSuccess);
         isScanning = true;
-      }, 2000);
+      }, 4000);
     }
 
     Html5Qrcode.getCameras().then(cameras => {
